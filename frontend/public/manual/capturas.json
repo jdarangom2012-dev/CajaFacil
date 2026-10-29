@@ -1,0 +1,116 @@
+{
+ "primeros-pasos": [
+  "login.usuario",
+  "login.clave",
+  "login.entrar"
+ ],
+ "inicio": [
+  "inicio.vender",
+  "inicio.caja",
+  "inicio.vendido",
+  "inicio.ventas",
+  "inicio.utilidad",
+  "inicio.fiado",
+  "inicio.hora",
+  "inicio.pagos",
+  "inicio.semana",
+  "inicio.top",
+  "inicio.agotarse"
+ ],
+ "vender": [
+  "vender.carrito",
+  "vender.buscar",
+  "vender.linea",
+  "vender.vaciar",
+  "vender.categorias",
+  "vender.cuadricula",
+  "vender.total",
+  "vender.espera",
+  "vender.cajon",
+  "vender.cobrar",
+  "vender.atajos"
+ ],
+ "cobrar": [
+  "cobrar.forma",
+  "cobrar.fiado",
+  "cobrar.recibido",
+  "cobrar.dividir",
+  "cobrar.imprimir",
+  "cobrar.volver",
+  "cobrar.confirmar"
+ ],
+ "caja": [
+  "caja.historial",
+  "caja.vendido",
+  "caja.efectivo",
+  "caja.base",
+  "caja.pagos",
+  "caja.cerrar",
+  "caja.movimientos",
+  "caja.sacar",
+  "caja.meter"
+ ],
+ "ventas": [
+  "ventas.excel",
+  "ventas.fechas",
+  "ventas.buscar"
+ ],
+ "productos": [
+  "productos.categoria",
+  "productos.buscar",
+  "productos.importar",
+  "productos.exportar",
+  "productos.nuevo",
+  "productos.precio",
+  "productos.stock",
+  "productos.activar"
+ ],
+ "categorias": [
+  "categorias.nueva"
+ ],
+ "inventario": [
+  "inventario.existencias",
+  "inventario.entrada",
+  "inventario.pedido",
+  "inventario.movimientos",
+  "inventario.valor",
+  "inventario.agotarse",
+  "inventario.ajustar"
+ ],
+ "fiado": [
+  "fiado.nuevo",
+  "fiado.porcobrar",
+  "fiado.vencido",
+  "fiado.hoy",
+  "fiado.buscar",
+  "fiado.filtro"
+ ],
+ "reportes": [
+  "reportes.ia",
+  "reportes.periodo",
+  "reportes.total",
+  "reportes.utilidad",
+  "reportes.ticket",
+  "reportes.dia",
+  "reportes.categoria",
+  "reportes.productos"
+ ],
+ "auditoria": [
+  "auditoria.alertas",
+  "auditoria.buscar"
+ ],
+ "usuarios": [
+  "usuarios.nuevo"
+ ],
+ "configuracion": [
+  "config.negocio",
+  "config.ventas",
+  "config.impresora",
+  "config.bascula",
+  "config.pagos",
+  "config.respaldos",
+  "config.licencia",
+  "config.equipo",
+  "config.prueba"
+ ]
+}

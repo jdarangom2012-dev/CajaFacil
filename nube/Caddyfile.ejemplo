@@ -1,0 +1,21 @@
+# Agrega este bloque al Caddyfile que ya usas en la VM (el mismo de DataDictAI / AutoInventory)
+# y recarga Caddy. Caddy saca y renueva los certificados HTTPS solo.
+#
+# cajafacil.app                 -> dominio principal (panel del dueño y sincronización de las tiendas)
+# www.cajafacil.app             -> redirige al principal
+# cajafacil.nautilustech.app    -> se deja como alias para los equipos de prueba que ya apuntan ahí
+
+cajafacil.app, cajafacil.nautilustech.app {
+	encode gzip
+	request_body {
+		max_size 300MB
+	}
+	# Si Caddy corre directo en la VM:
+	reverse_proxy 127.0.0.1:8095
+	# Si Caddy corre en Docker, usa en su lugar:  reverse_proxy host.docker.internal:8095
+	# (y en el servicio de Caddy:  extra_hosts: ["host.docker.internal:host-gateway"])
+}
+
+www.cajafacil.app {
+	redir https://cajafacil.app{uri} permanent
+}

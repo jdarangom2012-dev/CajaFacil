@@ -1,0 +1,25 @@
+# Copia este archivo como .env (cp ejemplo-configuracion.txt .env) en el servidor y cambia los valores. NUNCA lo subas a GitHub.
+# Genera claves largas con:  python3 -c "import secrets; print(secrets.token_urlsafe(48))"
+NUBE_SECRET_KEY=cambia-esto-por-una-clave-larga
+NUBE_DB_PASSWORD=cambia-esto-tambien
+NUBE_HOSTS=cajafacil.app,www.cajafacil.app,cajafacil.nautilustech.app
+NUBE_URL_PANEL=https://cajafacil.app
+
+# Llave PÚBLICA de licencias (la misma de backend/core/licencia.py). La privada nunca va al servidor.
+CAJAFACIL_LLAVE_PUBLICA=eTLjA2b9nqQblfzpLbR4A5tR9Kx+LjkKAYWmCkioNqY=
+
+# Días que la nube sigue recibiendo datos después de vencida la suscripción
+NUBE_DIAS_GRACIA=5
+# Copias de seguridad que se guardan por tienda
+NUBE_RESPALDOS_CONSERVAR=10
+
+# WhatsApp de soporte y ventas (sale en el panel del dueño)
+NUBE_SOPORTE_WHATSAPP=573151355693
+
+# Aviso de actualización de CajaFácil (opcional)
+CAJAFACIL_VERSION_PUBLICADA=
+CAJAFACIL_URL_DESCARGA=
+
+# Asistente con IA (opcional; sin clave el asistente dice "muy pronto")
+OPENAI_API_KEY=
+OPENAI_MODELO=gpt-4o-mini

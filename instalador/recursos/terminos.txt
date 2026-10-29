@@ -1,0 +1,31 @@
+﻿TÉRMINOS DE USO DE CAJAFÁCIL
+NautilusTech S.A.S. — Medellín, Colombia
+
+[BORRADOR PARA REVISIÓN DE UN ABOGADO ANTES DE USARSE COMERCIALMENTE]
+
+1. LICENCIA
+NautilusTech S.A.S. ("NautilusTech") otorga al cliente una licencia de uso no exclusiva e intransferible de CajaFácil para el número de equipos y cajas indicados en su licencia. El software es propiedad de NautilusTech; el cliente no adquiere derechos sobre el código fuente.
+
+2. PRUEBA
+La instalación incluye un periodo de prueba gratuito de 15 días. Al terminar, el programa queda en modo de solo consulta hasta activar una licencia.
+
+3. PLANES
+- Plan Básico: funcionamiento 100% local en el equipo del cliente.
+- Plan Nube: además incluye respaldo fuera de la tienda, consulta desde el celular, alertas y asistente con inteligencia artificial, mientras el pago mensual esté al día. Si el plan Nube no se renueva, el programa sigue funcionando en modo local.
+
+4. DATOS DEL CLIENTE
+La información de ventas, productos, clientes y fiados es del cliente y se guarda en su propio computador. Con el plan Nube se envía una copia a servidores de NautilusTech solo para prestar ese servicio. NautilusTech no vende ni comparte esos datos con terceros. El tratamiento de datos personales de los clientes del negocio (por ejemplo, nombres y teléfonos en el fiado) es responsabilidad del cliente como responsable del tratamiento según la Ley 1581 de 2012.
+
+5. RESPALDOS
+El programa hace copias de seguridad automáticas en el equipo. Es responsabilidad del cliente conservar el equipo en buen estado y, si lo desea, configurar una copia adicional en memoria USB. NautilusTech no responde por pérdidas de información causadas por daños del equipo, virus o manipulación del sistema.
+
+6. FACTURACIÓN ELECTRÓNICA
+Los tiquetes de CajaFácil son documentos internos y no reemplazan la factura electrónica ni el documento equivalente electrónico exigidos por la DIAN cuando el negocio esté obligado a expedirlos.
+
+7. SOPORTE Y ACTUALIZACIONES
+NautilusTech presta soporte por los canales publicados en nautilustech.app. Las actualizaciones pueden instalarse sobre la versión existente sin perder información.
+
+8. LIMITACIÓN DE RESPONSABILIDAD
+CajaFácil se entrega "tal cual". NautilusTech no será responsable por lucro cesante ni por daños indirectos derivados del uso del programa, dentro de los límites que permite la ley colombiana.
+
+Al instalar CajaFácil, el cliente acepta estos términos.

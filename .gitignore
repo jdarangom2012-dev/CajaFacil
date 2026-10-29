@@ -1,0 +1,31 @@
+# Dependencias y compilados
+node_modules/
+frontend/dist/
+backend/frontend_dist/
+backend/build/
+backend/dist/
+backend/.venv*/
+backend/static_root/
+__pycache__/
+*.pyc
+
+# Instalador
+instalador/paquete/
+instalador/descargas/
+instalador/salida/
+
+# ¡NUNCA subir la llave privada de licencias!
+herramientas/claves/
+
+# Datos locales
+*.dump
+*.log
+.env
+instalador/build_home/
+
+# Nube (servidor)
+nube/backend/frontend_dist/
+nube/backend/static_root/
+nube/backend/respaldos/
+nube/backend/*.sqlite3
+nube/.env

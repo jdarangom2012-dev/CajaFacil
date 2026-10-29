@@ -1,0 +1,38 @@
+# CajaFácil Nube: docker compose up -d --build
+# El panel queda en http://127.0.0.1:8095 y Caddy le pone el HTTPS (ver Caddyfile.ejemplo).
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cajafacil_nube
+      POSTGRES_USER: cajafacil_nube
+      POSTGRES_PASSWORD: ${NUBE_DB_PASSWORD}
+    volumes:
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cajafacil_nube -d cajafacil_nube"]
+      interval: 10s
+      retries: 10
+
+  app:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      NUBE_DB_NAME: cajafacil_nube
+      NUBE_DB_USER: cajafacil_nube
+      NUBE_DB_HOST: db
+      NUBE_DB_PORT: "5432"
+      NUBE_RESPALDOS_DIR: /datos/respaldos
+    volumes:
+      - respaldos:/datos/respaldos
+    ports:
+      - "127.0.0.1:8095:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db:
+  respaldos:

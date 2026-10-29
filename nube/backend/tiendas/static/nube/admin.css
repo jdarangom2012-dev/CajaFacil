@@ -1,0 +1,14 @@
+/* Colores de CajaFácil para el panel de NautilusTech (Jazzmin) */
+:root { --cf-azul: #1570EF; --cf-azul-oscuro: #0B4DB8; --cf-noche: #0B1220; }
+.login-logo img { max-width: 300px; height: auto; }
+.login-page { background: radial-gradient(900px 400px at 110% -10%, rgba(47,123,255,.18), transparent 60%), #F4F7FB; }
+.btn-primary, .btn-primary:hover, .btn-primary:focus { background-color: var(--cf-azul) !important; border-color: var(--cf-azul) !important; }
+.btn-primary:hover { background-color: var(--cf-azul-oscuro) !important; }
+.navbar-primary { background-color: var(--cf-azul) !important; }
+.main-sidebar, .main-sidebar::before, .main-sidebar .brand-link { background-color: var(--cf-noche) !important; }
+.brand-link .brand-text { color: #fff !important; background: transparent !important; }
+.navbar-primary .nav-link, .navbar-primary .navbar-nav .nav-link.active { color: #fff !important; }
+.nav-sidebar .nav-link.active, .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active { background-color: var(--cf-azul) !important; }
+a { color: var(--cf-azul); }
+.brand-link .brand-image { background: #fff; padding: 2px; }
+.card-primary.card-outline { border-top-color: var(--cf-azul); }

@@ -1,0 +1,7 @@
+frontend/node_modules
+backend/frontend_dist
+backend/static_root
+backend/respaldos
+backend/*.sqlite3
+**/__pycache__
+.env

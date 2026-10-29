@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --superficie: 255 255 255; --fondo: 244 247 251; --noche: 11 18 32; --noche-2: 29 41 57;
+    --tinta: 11 18 32; --tinta-2: 29 41 57; --tinta-3: 71 84 103; --tinta-4: 102 112 133;
+    --slate-50: 248 250 252; --slate-100: 241 245 249; --slate-200: 226 232 240; --slate-300: 203 213 225;
+    --slate-400: 148 163 184; --slate-500: 100 116 139; --slate-600: 71 85 105; --slate-700: 51 65 85;
+    --marca-50: 238 245 255; --marca-100: 217 232 255; --marca-200: 188 215 255; --marca-300: 142 189 255;
+    --marca-700: 11 87 208; --marca-800: 14 71 166; --marca-900: 18 61 130;
+    --exito-50: 236 253 243; --exito-100: 209 250 223; --exito-700: 2 122 72;
+    --alerta-50: 255 250 235; --alerta-100: 254 240 199; --alerta-200: 254 223 137; --alerta-700: 181 71 8;
+    --peligro-50: 254 243 242; --peligro-100: 254 228 226; --peligro-700: 180 35 24;
+  }
+  .dark {
+    color-scheme: dark;
+    --superficie: 19 28 46; --fondo: 10 16 30; --noche: 27 40 68; --noche-2: 38 54 88;
+    --tinta: 241 245 249; --tinta-2: 226 232 240; --tinta-3: 180 192 210; --tinta-4: 140 154 178;
+    --slate-50: 25 35 56; --slate-100: 31 43 67; --slate-200: 43 56 84; --slate-300: 62 77 107;
+    --slate-400: 112 127 155; --slate-500: 148 163 184; --slate-600: 176 188 205; --slate-700: 203 213 225;
+    --marca-50: 21 39 76; --marca-100: 27 50 97; --marca-200: 36 66 126; --marca-300: 56 98 178;
+    --marca-700: 142 189 255; --marca-800: 188 215 255; --marca-900: 217 232 255;
+    --exito-50: 13 46 35; --exito-100: 17 64 47; --exito-700: 108 233 166;
+    --alerta-50: 56 39 12; --alerta-100: 76 53 15; --alerta-200: 108 75 20; --alerta-700: 253 186 64;
+    --peligro-50: 62 22 24; --peligro-100: 84 28 30; --peligro-700: 253 162 155;
+  }
+}
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; }
+  body {
+    @apply bg-fondo text-tinta antialiased;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+  input, select, textarea, button { font: inherit; }
+  ::selection { @apply bg-marca-100 text-marca-900; }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type='number'] { -moz-appearance: textfield; }
+}
+
+@layer components {
+  .tarjeta { @apply bg-superficie rounded-2xl border border-slate-200/80 shadow-suave; }
+  .campo {
+    @apply w-full h-11 rounded-xl border border-slate-300 bg-superficie px-3.5 text-[15px] text-tinta
+      placeholder:text-slate-400 outline-none transition
+      focus:border-marca-500 focus:ring-4 focus:ring-marca-100 disabled:bg-slate-50 disabled:text-slate-500 [color-scheme:inherit];
+  }
+  .etiqueta { @apply block text-[13px] font-semibold text-tinta-2 mb-1.5; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold; }
+  .tabla th { @apply text-left text-xs font-semibold uppercase tracking-wide text-tinta-4 px-4 py-3 bg-slate-50/80 border-b border-slate-200; }
+  .tabla th.text-right { text-align: right; }
+  .tabla td { @apply px-4 py-3 border-b border-slate-100 text-sm; }
+  .tabla tbody tr { @apply transition-colors hover:bg-marca-50/40; }
+  .scroll-fino { scrollbar-width: thin; scrollbar-color: rgb(var(--slate-300)) transparent; }
+  .scroll-fino::-webkit-scrollbar { width: 8px; height: 8px; }
+  .scroll-fino::-webkit-scrollbar-thumb { background: rgb(var(--slate-300)); border-radius: 8px; }
+  .kbd { @apply inline-flex items-center justify-center min-w-[22px] h-[20px] px-1 rounded-md border border-slate-300 bg-superficie text-[11px] font-bold text-tinta-3 shadow-[0_1px_0_rgb(var(--slate-300))]; }
+  .fondo-marca {
+    background:
+      radial-gradient(1200px 500px at 110% -10%, rgba(47,123,255,.22), transparent 60%),
+      radial-gradient(800px 400px at -10% 110%, rgba(18,183,106,.10), transparent 60%),
+      rgb(var(--fondo));
+  }
+}
+
